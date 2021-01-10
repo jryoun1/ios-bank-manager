@@ -7,8 +7,9 @@
 
 import Foundation
 
-final class Teller: OperationQueue {
+final class Teller {
     private var windowNumber: Int
+    var workingQueue: DispatchQueue
     private var isWorking: Bool = false
     var isNotWorking: Bool {
         return !isWorking
@@ -16,26 +17,16 @@ final class Teller: OperationQueue {
     
     init(windowNumber: Int) {
         self.windowNumber = windowNumber
+        workingQueue = DispatchQueue(label: "\(windowNumber)")
     }
     
-    func handleBusiness(for clientNumber: Int) {
-        let client = BankManager.shared.clients[clientNumber]
-        let needTimeToWork: UInt32 = UInt32(Bank.milliseconds * client.businessType.neededTime)
+    func handleBusiness(for client: Client) {
+        let needTimeToWork = client.businessType.neededTime
 
         isWorking = true
-        printStartBusiness(for: client)
-        usleep(needTimeToWork)
-        printFinishBusiness(for: client)
+        Dashboard.printStatus(for: client, about: .tellerStart)
+        Thread.sleep(forTimeInterval: needTimeToWork)
+        Dashboard.printStatus(for: client, about: .tellerFinish)
         isWorking = false
-    }
-    
-    private func printStartBusiness(for client: Client) {
-        let message = String(format: Bank.tellerStartMassage, windowNumber, client.waitingNumber)
-        print(message)
-    }
-    
-    private func printFinishBusiness(for client: Client) {
-        let message = String(format: Bank.tellerFinishMessage, windowNumber, client.waitingNumber)
-        print(message)
     }
 }
