@@ -11,12 +11,12 @@ final class Bank {
     private var tellers: [Teller] = []
     private var finishedClientNumber = 0
     private var businessTime: TimeInterval?
-  
+
     func operateBank(teller: Int, client: [Client]) {
         let openTime = Date()
         
         initTellers(teller)
-        clients = client
+        clients = client.sorted()
         assignBusinessToTeller()
         businessTime = Date().timeIntervalSince(openTime)
         Dashboard.printCloseMessage(finishedClientNumber, businessTime)
@@ -30,7 +30,7 @@ final class Bank {
     }
     
     private func assignBusinessToTeller() {
-        let semaphore = DispatchSemaphore(value: 0)
+        let dispatchGroup = DispatchGroup()
         var isContinue = true
         
         while isContinue {
@@ -41,15 +41,12 @@ final class Bank {
                 }
                 if teller.isNotWorking {
                     let client = clients.removeFirst()
-                    teller.workingQueue.async {
-                        teller.handleBusiness(for: client)
-                        semaphore.signal()
-                    }
+                    teller.handleBusiness(for: client, withDispatchGroup: dispatchGroup)
                     self.finishedClientNumber += 1
                 }
             }
         }
-        for _ in 0..<finishedClientNumber { semaphore.wait() }
+        dispatchGroup.wait()
     }
     
     private func closeBank() {
