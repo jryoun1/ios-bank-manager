@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class Client {
-    enum Priority: Comparable, CaseIterable {
+struct Client {
+    enum Priority: Comparable, CaseIterable, CustomStringConvertible {
         case VVIP
         case VIP
         case normal
