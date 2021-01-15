@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2681F89A25B168F700BE1833 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89025B168F700BE1833 /* StringExtension.swift */; };
-		2681F89B25B168F700BE1833 /* BankStringCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89225B168F700BE1833 /* BankStringCollection.swift */; };
-		2681F89C25B168F700BE1833 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89425B168F700BE1833 /* Customer.swift */; };
-		2681F89D25B168F700BE1833 /* BankHeadquarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89525B168F700BE1833 /* BankHeadquarter.swift */; };
-		2681F89E25B168F700BE1833 /* BankManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89625B168F700BE1833 /* BankManager.swift */; };
-		2681F89F25B168F700BE1833 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89725B168F700BE1833 /* Bank.swift */; };
-		2681F8A025B168F700BE1833 /* StringFormattingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F89925B168F700BE1833 /* StringFormattingError.swift */; };
+		2681F8C925B1B92200BE1833 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8BF25B1B92100BE1833 /* StringExtension.swift */; };
+		2681F8CA25B1B92200BE1833 /* BankStringCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C125B1B92100BE1833 /* BankStringCollection.swift */; };
+		2681F8CB25B1B92200BE1833 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C325B1B92100BE1833 /* Customer.swift */; };
+		2681F8CC25B1B92200BE1833 /* BankHeadquarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C425B1B92100BE1833 /* BankHeadquarter.swift */; };
+		2681F8CD25B1B92200BE1833 /* BankManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C525B1B92100BE1833 /* BankManager.swift */; };
+		2681F8CE25B1B92200BE1833 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C625B1B92100BE1833 /* Bank.swift */; };
+		2681F8CF25B1B92200BE1833 /* StringFormattingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681F8C825B1B92100BE1833 /* StringFormattingError.swift */; };
 		C7694E3B259C3E9F0053667F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7694E3A259C3E9F0053667F /* AppDelegate.swift */; };
 		C7694E3D259C3E9F0053667F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7694E3C259C3E9F0053667F /* SceneDelegate.swift */; };
 		C7694E3F259C3E9F0053667F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7694E3E259C3E9F0053667F /* ViewController.swift */; };
@@ -42,9 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2681F7FA25B1529400BE1833 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = ../Customer.swift; sourceTree = "<group>"; };
-		2681F7FB25B1529400BE1833 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bank.swift; path = ../Bank.swift; sourceTree = "<group>"; };
-		2681F80C25B1560100BE1833 /* BankHeadquarter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankHeadquarter.swift; path = ../BankHeadquarter.swift; sourceTree = "<group>"; };
+		2681F8BF25B1B92100BE1833 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2681F8C125B1B92100BE1833 /* BankStringCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankStringCollection.swift; sourceTree = "<group>"; };
+		2681F8C325B1B92100BE1833 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		2681F8C425B1B92100BE1833 /* BankHeadquarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankHeadquarter.swift; sourceTree = "<group>"; };
+		2681F8C525B1B92100BE1833 /* BankManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankManager.swift; sourceTree = "<group>"; };
+		2681F8C625B1B92100BE1833 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		2681F8C825B1B92100BE1833 /* StringFormattingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormattingError.swift; sourceTree = "<group>"; };
 		C7694E37259C3E9F0053667F /* BankManagerUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankManagerUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7694E3A259C3E9F0053667F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7694E3C259C3E9F0053667F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,49 +90,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2681F88E25B168F700BE1833 /* CommonFiles */ = {
+		2681F8BD25B1B92100BE1833 /* CommonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				2681F88F25B168F700BE1833 /* Extension */,
-				2681F89125B168F700BE1833 /* Enum */,
-				2681F89325B168F700BE1833 /* Data */,
-				2681F89825B168F700BE1833 /* Error */,
+				2681F8BE25B1B92100BE1833 /* Extension */,
+				2681F8C025B1B92100BE1833 /* Enum */,
+				2681F8C225B1B92100BE1833 /* Data */,
+				2681F8C725B1B92100BE1833 /* Error */,
 			);
 			name = CommonFiles;
 			path = ../../CommonFiles;
 			sourceTree = "<group>";
 		};
-		2681F88F25B168F700BE1833 /* Extension */ = {
+		2681F8BE25B1B92100BE1833 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2681F89025B168F700BE1833 /* StringExtension.swift */,
+				2681F8BF25B1B92100BE1833 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		2681F89125B168F700BE1833 /* Enum */ = {
+		2681F8C025B1B92100BE1833 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				2681F89225B168F700BE1833 /* BankStringCollection.swift */,
+				2681F8C125B1B92100BE1833 /* BankStringCollection.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		2681F89325B168F700BE1833 /* Data */ = {
+		2681F8C225B1B92100BE1833 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2681F89425B168F700BE1833 /* Customer.swift */,
-				2681F89525B168F700BE1833 /* BankHeadquarter.swift */,
-				2681F89625B168F700BE1833 /* BankManager.swift */,
-				2681F89725B168F700BE1833 /* Bank.swift */,
+				2681F8C325B1B92100BE1833 /* Customer.swift */,
+				2681F8C425B1B92100BE1833 /* BankHeadquarter.swift */,
+				2681F8C525B1B92100BE1833 /* BankManager.swift */,
+				2681F8C625B1B92100BE1833 /* Bank.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		2681F89825B168F700BE1833 /* Error */ = {
+		2681F8C725B1B92100BE1833 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				2681F89925B168F700BE1833 /* StringFormattingError.swift */,
+				2681F8C825B1B92100BE1833 /* StringFormattingError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -156,7 +160,7 @@
 		C7694E39259C3E9F0053667F /* BankManagerUIApp */ = {
 			isa = PBXGroup;
 			children = (
-				2681F88E25B168F700BE1833 /* CommonFiles */,
+				2681F8BD25B1B92100BE1833 /* CommonFiles */,
 				C7694E3A259C3E9F0053667F /* AppDelegate.swift */,
 				C7694E3C259C3E9F0053667F /* SceneDelegate.swift */,
 				C7694E3E259C3E9F0053667F /* ViewController.swift */,
@@ -316,18 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2681F80D25B1560100BE1833 /* BankHeadquarter.swift in Sources */,
-				2681F7FC25B1529400BE1833 /* Customer.swift in Sources */,
-				2681F7FD25B1529400BE1833 /* Bank.swift in Sources */,
 				C7694E3F259C3E9F0053667F /* ViewController.swift in Sources */,
-				2681F8A025B168F700BE1833 /* StringFormattingError.swift in Sources */,
+				2681F8CD25B1B92200BE1833 /* BankManager.swift in Sources */,
+				2681F8CF25B1B92200BE1833 /* StringFormattingError.swift in Sources */,
+				2681F8CC25B1B92200BE1833 /* BankHeadquarter.swift in Sources */,
+				2681F8C925B1B92200BE1833 /* StringExtension.swift in Sources */,
+				2681F8CB25B1B92200BE1833 /* Customer.swift in Sources */,
+				2681F8CA25B1B92200BE1833 /* BankStringCollection.swift in Sources */,
 				C7694E3B259C3E9F0053667F /* AppDelegate.swift in Sources */,
-				2681F89E25B168F700BE1833 /* BankManager.swift in Sources */,
-				2681F89C25B168F700BE1833 /* Customer.swift in Sources */,
 				C7694E3D259C3E9F0053667F /* SceneDelegate.swift in Sources */,
-				2681F89F25B168F700BE1833 /* Bank.swift in Sources */,
-				2681F89B25B168F700BE1833 /* BankStringCollection.swift in Sources */,
-				2681F89D25B168F700BE1833 /* BankHeadquarter.swift in Sources */,
+				2681F8CE25B1B92200BE1833 /* Bank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
